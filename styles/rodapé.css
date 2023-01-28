@@ -1,5 +1,5 @@
 hr {
- margin: 0;
+    margin: 0;
 }
 
 .rodapé {
@@ -11,17 +11,18 @@ hr {
     display: none;
 }
 
-@media screen and (min-width :1024px) {
+@media screen and (min-width: 1024px) {
     .rodapé {
         display: flex;
         justify-content: space-around;
     }
 
-    .lista-rodapé{
+    .lista-rodapé {
         display: block;
     }
 
     .lista-rodapé__item {
+        display: flex;
         align-items: center;
         margin: 0.6em 0;
     }
@@ -33,8 +34,8 @@ hr {
     }
 
     .lista-rodapé__titulo {
-        color: var(--cinza-claro);
         font-size: 14px;
+        color: var(--cinza-claro);
     }
 
     .rodapé__titulo {
@@ -42,7 +43,7 @@ hr {
     }
 }
 
-@media screen and (min-width :1728px) {
+@media screen and (min-width: 1728px) {
     .lista-rodapé {
         border-left: 1px solid var(--cinza-claro);
         padding-left: 1em;

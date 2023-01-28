@@ -1,22 +1,21 @@
 .cabeçalho__menu-hamburguer {
     width: 24px;
     height: 24px;
-    background-image: url(../img/Menu.svg);
+    background-image: url("../img/Menu.svg");
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
 }
 
-.container__botao:checked ~ .container__rotulo > .cabeçalho__menu-hamburguer {
-    background-image: url(/img/Menu\ Aberto.svg);
+.container__botao:checked~.container__rotulo>.cabeçalho__menu-hamburguer {
+    background-image: url("../img/Menu Aberto.svg");
 }
 
-.container__botao:checked ~ .container__rotulo {
-    background: var(--azul-degrade)
+.container__botao:checked~.container__rotulo {
+    background: var(--azul-degrade);
 }
 
-
-.cabeçalho{
+.cabeçalho {
     background-color: var(--branco);
     display: flex;
     justify-content: space-between;
@@ -29,7 +28,7 @@
     align-items: center;
 }
 
-.container__imagem{ 
+.container__imagem {
     padding: 1em;
 }
 
@@ -40,14 +39,14 @@
     width: 60vw;
 }
 
-.container__botao:checked ~ .lista-menu{
+.container__botao:checked~.lista-menu {
     display: block;
 }
 
-.lista-menu__titulo, .lista-menu__item{
+.lista-menu__titulo,
+.lista-menu__item {
     padding: 1em;
     background-color: var(--branco);
-
 }
 
 .lista-menu__titulo {
@@ -63,15 +62,15 @@
     text-transform: uppercase;
 }
 
-.container__botao{
+.container__botao {
     display: none;
 }
 
-.container__titulo{
+.container__titulo {
     display: none;
 }
 
-.opções{
+.opções {
     display: none;
 }
 
@@ -79,9 +78,10 @@
     display: none;
 }
 
-@media screen and (min-width :1024px) {
+@media screen and (min-width: 1024px) {
 
-    .container__titulo, .container__titulo--negrito{
+    .container__titulo,
+    .container__titulo--negrito {
         font-family: var(--fonte-secundario);
         font-size: 30px;
     }
@@ -117,7 +117,7 @@
         display: none;
     }
 
-    .opções__botão:checked ~ .lista-menu {
+    .opções__botão:checked~.lista-menu {
         display: block;
         width: auto;
     }
@@ -126,7 +126,7 @@
         display: none;
     }
 
-    .opções__botão:checked ~ .opções__rotulo > .opções__item {
+    .opções__botão:checked~.opções__rotulo>.opções__item {
         background: var(--azul-degrade);
         color: var(--branco);
     }
@@ -139,13 +139,14 @@
         background: var(--azul-degrade);
     }
 
-    .lista-menu__item:hover > .lista-menu__link {
+    .lista-menu__item:hover>.lista-menu__link {
         -webkit-text-fill-color: var(--branco);
         text-decoration: none;
     }
+
 }
 
-@media screen and (min-width :1728px) {
+@media screen and (min-width: 1728px) {
     .container__link {
         display: flex;
         align-items: center;
